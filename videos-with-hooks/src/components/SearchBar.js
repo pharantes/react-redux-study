@@ -1,10 +1,11 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
 const SearchBar = ({ onFormSubmit }) => {
-  const [term, setTerm] = useState("");
+  const [term, setTerm] = useState('');
 
   const onSubmit = (event) => {
     event.preventDefault();
+
     onFormSubmit(term);
   };
 
